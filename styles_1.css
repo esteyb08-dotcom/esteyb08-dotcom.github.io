@@ -1,0 +1,158 @@
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+
+header {
+  background-color: #2f6b8f;
+  color: white;
+  padding: 24px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+header .tagline {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* Main content */
+
+main {
+  padding: 24px 0 40px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border: 1px solid #ddd;
+}
+
+/* Headings */
+
+h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Quick facts list */
+
+.quick-facts ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.quick-facts li {
+  margin-bottom: 4px;
+}
+
+/* Review section */
+
+.review p {
+  margin-bottom: 10px;
+}
+
+.pros-cons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.pros-cons .box {
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  background-color: #fafafa;
+}
+
+.pros-cons h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+/* Photo section */
+
+.photo figure {
+  margin: 0;
+  text-align: center;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.photo-note {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Button-style link */
+
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #2f6b8f;
+  background-color: #2f6b8f;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.button-link:hover {
+  background-color: white;
+  color: #2f6b8f;
+}
+
+/* Footer */
+
+footer {
+  background-color: #e0e0e0;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Make it look OK on small screens */
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .pros-cons {
+    flex-direction: column;
+  }
+}
